@@ -1,11 +1,13 @@
 #!/usr/local/bin/python3
 
+## script that finds the single largest integer in the book 'Urantia'
+
 # import operating system and reg expression modules
 import os
 import re
 
 # create a string object of the philosophical book 'Urantia'
-# and removes character seperators
+# and remove character seperators
 with open('/users/abrick/resources/urantia') as urantia:
   urantia = urantia.read().replace('\n', '').replace(' ', '').replace(',', '')
 
